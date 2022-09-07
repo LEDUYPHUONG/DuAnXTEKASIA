@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+::after,::before{
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+img{
+    max-width: 100%;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* scroll */
+.body-right .body-right-main{
+    overflow-y: scroll;
+}
+
+/* scroll bar */
+:-webkit-scrollbar-thumb{
+    background: #fff;
+}
+:hover::-webkit-scrollbar-thumb {
+    background: #e9e9eb;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff; 
+} 
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e9e9eb;
+    border-radius: 3px;
+   
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+body .container {
+    margin: 0;
+    display: flex;
+ 
+}
+
+.body-left{
+    width: 61%;
+    height: 100vh;
+    padding: 0 15px;
+    background: #000;
+    position: relative;
+}
+
+.body-left video{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.body-left .icons{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.body-left .icons .icon-close {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.body-left .icons .icon-close i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.body-left .icons .icon-report button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;   
+}
+
+.body-left .next-prev{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 0;
+    height: 100%;
+}
+
+.body-left .next-prev i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 40px;
+    border: none;
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+
+.buttonVideo{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+    cursor: pointer;
+}
+
+.buttonVideo:hover{
+    opacity: 0.7;
+
+}
+
+
+/* body-right */
+
+.body-right{
+    width: 39%;
+    padding: 0;
+}
+.body-right-container{
+    margin: 0 40px;
+    
+}
+.header-top{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+.button-account{
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button-account:hover .account{
+ text-decoration: underline;
+}
+
+
+.logo-account{
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+}
+
+.logo-account img{
+    width: 100%;
+}
+
+.button-account .account-aliases{
+    padding-left: 10px;
+    font-size: 15px;
+    text-align: start;
+}
+
+.button-account .account-aliases .account{
+    font-weight: bold;
+    
+}
+
+.button-account .account-aliases .aliases{
+    color: #000;
+    font-size: 15px;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.button-account .account-aliases i{
+    color: #fff;
+    background-color: #20d5ec;
+    border: none;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 2px;
+}
+.see-all-accounts {
+    margin: 10px 0;
+    border: none;
+    background-color: #fff;
+    color: #fe2c55;
+    cursor: pointer;
+    width: 100%;
+    text-align: start;
+    font-size: 15px;
+}
+
+.button-follow{
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #fe2c55;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #fe2c55;
+    font-weight: bold;
+}
+.button-follow:hover{
+    background-color: rgba(254, 44, 85, 0.06);
+}
+.header-main p{
+    padding: 5px 0;
+}
+
+.like-comment-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.like-comment-link .like-comment span{
+    padding-right: 20px;
+}
+
+.like-comment-link .like-comment i{
+    background-color: rgba(22, 24, 35, 0.06);
+    border: 1px solid #fff;
+    color: #000;
+    border-radius: 50%;
+    padding: 5px;
+}
+.like-comment-link .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-link{   
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.fa-solid.fa-code{
+    color: #fff;
+    background-color: #50525a;
+}
+
+.fa-brands.fa-telegram{
+    color: #fe2c55;
+    background-color: #fff; 
+    font-size: 20px;  
+}
+
+.fa-brands.fa-facebook{
+    color: rgb(0, 117, 250);
+    background-color: #fff;
+    font-size: 20px;
+}
+
+.fa-brands.fa-whatsapp{
+    color: #fff;
+    background-color: rgb(37, 211, 102);
+}
+
+.fa-brands.fa-twitter{
+    color: #fff;
+    background-color: rgb(29, 161, 242);
+}
+
+.coppy-link{
+    width: 100%;
+    border: 1px solid #b9b9bb;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coppy-link input{
+    width: inherit;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #f1f1f2;
+}
+
+.coppy-link button{
+    border: none;
+    background: #fff;
+    padding: 0 20px;
+    font-weight: bold;
+    white-space: nowrap
+}
+
+
+.body-right-main{
+    border: 1px solid #b9b9bb;
+    margin-top: 20px;
+    background-color: #f1f1f2;
+    height: 300px;
+}
+
+.renderChatBox .button-account{
+    background-color: #f1f1f2;
+}
+
+.item-chatbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #50525a;
+}
+
+.item-chatbox .reply{
+    padding-top: 10px;
+}
+
+.item-chatbox .button-account{
+    align-items: flex-start;
+}
+
+.item-chatbox .fa-solid.fa-ellipsis{
+    display: none;
+}
+
+.item-chatbox:hover  .fa-solid.fa-ellipsis{
+    display: block;
+}
+
+.suggestion{
+    background: #f1f1f2;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0;
+    color: #fe2c55;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: start;
+}
+

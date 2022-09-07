@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* html{
+    overflow: hidden;
+} */
+.container{
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+::after,::before{
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    max-width: 100%;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* scroll bar */
+.main-left::-webkit-scrollbar-thumb{
+    background: #fff;
+}
+.main-left:hover::-webkit-scrollbar-thumb {
+    background: #e9e9eb;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff; 
+} 
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e9e9eb;
+    border-radius: 3px;
+   
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/* header */
+header{
+    border-bottom:  1px solid rgba(233, 233, 235, 0.9) ;
+    
+}
+/* header-navbar */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header-logo-tiktok */
+.nav-bar .name{
+    font-size: 27px ;
+    color: #fe2c55;
+    vertical-align:top;
+}
+
+.nav-bar .logo {
+    width: 30px;
+    vertical-align: top;
+    
+}
+
+/* header-search */
+.search{
+    display: flex;
+    width: 380px;
+    align-items: center;
+    border: 1px solid #c5c5c9   ;
+    border-radius:25px;
+    overflow: hidden;
+    background-color: #f1f1f2;
+}
+
+.search input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #f1f1f2;
+    font-size: 15px;
+}
+
+.search .icon-search{
+    border-left: 1px solid #c5c5c9;
+    width: 20%;
+    text-align: center  ;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f1f1f2;
+}
+
+.search .icon-search button{
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #f1f1f2;
+}
+
+.search .icon-search button:hover {
+    background-color: #e9e9eb;
+}
+
+.search .icon-search i{
+    font-size: 20px;
+}
+/* header - upload-login-language */
+
+.upload-login-language {
+    display: flex;
+}
+
+.upload-login-language .button{
+padding: 10px;
+}
+
+.upload-login-language .button .upload,
+.upload-login-language .button .login{
+    
+    margin-left: 10px;
+    border-radius: 5px;
+    
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.upload-login-language .button .upload{
+    background-color: #fff;
+    border: 1px solid #c5c5c9;
+    padding: 9px 20px;
+}
+
+.upload-login-language .button .upload:hover{
+    background-color: #e9e9eb;
+}
+
+.upload-login-language .button .login {
+    background-color: rgba(254, 44, 85, 1.0);
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    vertical-align: middle;
+}
+
+.upload-login-language .button .login:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),#FE2C55;
+}
+
+.upload-login-language .button .upload span {
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+
+.upload-login-language .button .option-dot{
+   border: none;
+   background: #fff;
+   padding-left: 20px;
+}
+
+.upload-login-language .button .option-dot i{
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/* main */
+.main-body{
+    display: flex;
+}
+/* main-left */
+.main-left{
+    width: 17%;
+    height: 600px;
+    padding-top: 20px;
+    overflow-y: auto;
+    padding-right: 5px;
+    
+}
+
+.main-left .link{
+    border-bottom: 1px solid #e9e9eb;
+    padding-bottom: 5px;
+}
+.main-left .link button{
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    text-align: start;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.main-left .link button i{
+    padding-right: 10px;
+}
+.main-left .link button:hover{
+    background-color: #e9e9eb;
+}
+
+.main-left .reminder{
+    padding: 20px 0;
+    color: #c5c5c9;
+    font-size: 15px;
+}
+
+.main-left .login{
+    background-color: #fff;
+    border: 1px solid #fe2c55;
+    color: #fe2c55;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main-left .list-accounts{
+    padding: 20px 0;
+    border-top: 1px solid #e9e9eb;
+    border-bottom: 1px solid #e9e9eb;
+}
+.main-left .list-accounts .list-accounts-title{
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: rgba(22, 24, 35, 0.75);
+}
+
+.main-left .renderAccounts .button-account{
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.main-left .renderAccounts .button-account:hover{
+    background-color: #e9e9eb;
+}
+.main-left .renderAccounts .logo-account{
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 30px;
+}
+
+.main-left .renderAccounts .logo-account img{
+    width: 100%;
+}
+
+.main-left .renderAccounts .button-account .account-aliases{
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.main-left .renderAccounts .button-account .account-aliases .aliases{
+    color: #c5c5c9;
+    font-size: 15px;
+    text-align: start;
+}
+
+.main-left .renderAccounts .button-account .account-aliases i{
+    color: #fff;
+    background-color: #20d5ec;
+    border: none;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 2px;
+}
+.main-left .renderAccounts .see-all-accounts {
+    margin: 10px 0;
+    border: none;
+    background-color: #fff;
+    color: #fe2c55;
+    cursor: pointer;
+    width: 100%;
+    text-align: start;
+    font-size: 15px;
+}
+
+.main-left .list-musics{
+    padding: 20px 0;
+}
+
+.main-left .list-musics p{
+    padding-bottom: 20px;
+    color: rgba(22, 24, 35, 0.75);
+}
+
+.main-left .list-musics button{
+    border: 1px solid #e9e9eb;
+    border-radius: 20px;
+    padding: 2px 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    display: block;
+}
+.main-left .list-musics button span{
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 15px;
+}
+.main-left .main-footer{
+    padding: 20px 0;
+    border-top: 1px solid #e9e9eb;;
+}
+
+.main-left .main-footer p{
+    padding: 10px 0;
+}
+
+.main-left .main-footer a,
+.main-left .main-footer p{
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.main-left .main-footer a:hover{
+    text-decoration: underline;
+}
+
+/* main-right */
+.main-right{
+    width: 80%;
+    padding-left: 3%;
+   
+}
+.main-right .menu{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0;
+}
+.main-right .videos,
+.main-right .likes {
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    height: 22px;
+}   
+
+.main-right .videos.active{
+    border-bottom: 2px solid #000;
+}
+
+.main-right .videos:hover,
+.main-right .likes:hover {
+    border-bottom: 2px solid #000;
+}
+
+.renderVideos{
+display: flex;
+flex-wrap: wrap;
+margin: 0 -10px;
+}
+
+.renderVideos .video{
+    width: calc(100%/5);
+    padding:0 10px;
+    margin-bottom: 10px;
+}
+
+.renderVideos .video video{
+    width: 100%;
+}
+
+.renderVideos .title-video{
+    color: rgba(22, 24, 35, 1.0);;
+    text-align: center;
+    
+}
+.renderVideos a{
+    position: relative;
+}
+.renderVideos .wiew {
+    color: #fff;
+    padding-left: 20px;
+    position: relative;
+}
+
+.renderVideos .wiew i{
+    position: absolute;
+    bottom: 13px;
+}
+
+.renderVideos .wiew span{
+    position: absolute;
+    bottom: 10px;
+    margin-left: 20px;
+}
+
+/* popup */
+
+.upload-login-language .language-feedback-keyboard{
+    display: none;
+}
+

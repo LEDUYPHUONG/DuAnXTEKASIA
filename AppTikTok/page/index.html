@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS MAP</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-bar">
+                <div class="logoTikTok">
+                    <a href="#">
+                        <img class="logo" src="../img/logososmap.png" alt="logo">
+                        <span class="name">SOSMAP</span>
+                    </a>
+                </div>
+                <div class="search">
+                    <input class="abc" type="text" placeholder="Search accounts and videos">
+                    <div class="icon-search">
+                        <button type="button"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+                <div class="upload-login-language">
+                    <div class="button">
+                        <button type="button" class="upload"> <span>+</span> <span>Upload</span></button>
+                        <button type="button" class="login">Log in</button>
+                        <button type="button" class="option-dot" id="option-dot"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                    <div class="language-feedback-keyboard">
+                        <div class="language">
+                            <i class="fa-regular fa-square-a"></i>
+                            English
+                        </div>
+                        <div class="feedback">
+                            <i class="fa-regular fa-question"></i>
+                            Feedback and help
+                        </div>
+                        <div class="keyboard">
+                            <i class="fa-regular fa-keyboard"></i>
+                            Keyboard and shortcuts
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-body">
+                <div class="main-left">
+                    <div class="link">
+                        <div class="link-foryou">
+                            <button type="button">
+                                <i class="fa-solid fa-house"></i>
+                                For you
+                            </button>
+                        </div>
+                        <div class="link-following">
+                            <button type="button">
+                                <i class="fa-solid fa-user-group"></i>
+                                Following
+                            </button>
+                        </div>
+                        <div class="live">
+                            <button type="button">
+                                <i class="fa-solid fa-video"></i>
+                                LIVE
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <p class="reminder">Log in to follow creators, like videos, and view comments.</p>
+                    <button type="button" class="login">Log in</button>
+                    
+                    <div class="list-accounts">
+                        <p class="list-accounts-title">Suggested accounts</p>
+                        <div class="renderAccounts">
+                            <button type="button" class="button-account">
+                                <div class="logo-account">
+                                    <img src="https://i.pravatar.cc/" alt="logoAccount">
+                                </div>
+                                <div class="account-aliases">
+                                    <span class="account">60giay.com</span>
+                                    <i class="fa-solid fa-check"></i>
+                                    <p class="aliases">60giay.com</p>
+                                </div>
+                            </button>
+                            
+                            <button type="button" class="button-account">
+                                <div class="logo-account">
+                                    <img src="https://i.pravatar.cc/" alt="logoAccount">
+                                </div>
+                                <div class="account-aliases">
+                                    <span class="account">tiin.vn</span>
+                                    <i class="fa-solid fa-check"></i>
+                                    <p class="aliases">tiin.vn</p>
+                                </div>
+                            </button>
+                            <button type="button" class="button-account">
+                                <div class="logo-account">
+                                    <img src="https://i.pravatar.cc/" alt="logoAccount">
+                                </div>
+                                <div class="account-aliases">
+                                    <span class="account">yeah1.trending</span>
+                                    <i class="fa-solid fa-check"></i>
+                                    <p class="aliases">yeah1 trending</p>
+                                </div>
+                            </button>
+                            <button type="button" class="see-all-accounts">See all</button>
+                        </div>
+                    </div>
+                    <div class="list-musics">
+                        <p>Discover</p>
+                        <button type="button"># <span>suthatla</span></button>
+                        <button type="button"># <span>mackedoi</span></button>
+                        <button type="button"># <span>sangsangthaydoi</span></button>
+                        <button type="button"><i class="fa-solid fa-music"></i> <span>Yêu Đơn Phương Là Gì(...</span></button>
+                        <button type="button"><i class="fa-solid fa-music"></i> <span>Về Nghe Mẹ Ru - NSN...</span></button>
+                        <button type="button"><i class="fa-solid fa-music"></i> <span>Thiên Thần Tình Yêu...</span></button>
+                        <button type="button"># <span>7749hieuung</span></button>
+                        <button type="button"># <span>genzlife</span></button>
+                        <button type="button"><i class="fa-solid fa-music"></i> <span>Tình Dã Đầy Một Ti...</span></button>
+                        <button type="button"><i class="fa-solid fa-music"></i> <span>Thằng Hầu(Thái ...</span></button>
+                    </div>
+                    <div class="main-footer">
+                        <p>
+                            <a href="#">About</a>
+                            <a href="#">TikTok Browse</a>
+                            <a href="#">Newsroom</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Careers</a>
+                            <a href="#">ByteDance</a>
+                        </p>
+                        <p>
+                            <a href="#">TikTok for Good</a>
+                            <a href="#">Advertise</a>
+                            <a href="#">Developers</a>
+                            <a href="#">Transparency</a>
+                            <a href="#">TikTok Rewards</a>
+                        </p>
+                        <p>
+                            <a href="#">Help</a>
+                            <a href="#">Safety</a>
+                            <a href="#">Termss</a>
+                            <a href="#">Privacy</a>
+                            <a href="#">Creator Portal</a>
+                            <a href="#">Community Guidelines</a>
+                        </p>
+                        <p>© 2022 TikTok</p>
+                    </div>
+                </div>
+                <div class="main-right">
+                    <div class="menu">
+                        <div class="videos active">
+                            Videos
+                        </div>
+                        <div class="likes">
+                            Liked
+                        </div>
+                    </div>
+                    <div class="renderVideos">
+                        <div class="video">
+                            <a href="../page/detail.html">
+                                <video 
+                                src="../video/videoDemo.mp4"
+                                
+                                ></video>
+                                <p class="wiew">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>4356</span>
+                                </p>
+                                <p class="title-video">TRUY BẮT NGHI PHẠM SÁT HẠI TÌNH ĐỊCH TẠI PHÒNG TRỌ</p> 
+                            </a>
+                        </div>
+                        <div class="video">
+                            <a href="../page/detail.html">
+                                <video 
+                                src="../video/videoDemo.mp4" 
+                                ></video>
+                                <p class="wiew">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>4356</span>
+                                </p>
+                                <p class="title-video">TRUY BẮT NGHI PHẠM SÁT HẠI TÌNH ĐỊCH TẠI PHÒNG TRỌ</p> 
+                            </a>
+                        </div>
+                        <div class="video">
+                            <a href="../page/detail.html">
+                                <video 
+                                src="../video/videoDemo.mp4" 
+                                ></video>
+                                <p class="wiew">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>4356</span>
+                                </p>
+                                <p class="title-video">TRUY BẮT NGHI PHẠM SÁT HẠI TÌNH ĐỊCH TẠI PHÒNG TRỌ</p> 
+                            </a>
+                        </div>
+                        <div class="video">
+                            <a href="../page/detail.html">
+                                <video 
+                                src="../video/videoDemo.mp4" 
+                                ></video>
+                                <p class="wiew">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>4356</span>
+                                </p>
+                                <p class="title-video">TRUY BẮT NGHI PHẠM SÁT HẠI TÌNH ĐỊCH TẠI PHÒNG TRỌ</p> 
+                            </a>
+                        </div>
+                        <div class="video">
+                            <a href="../page/detail.html">
+                                <video 
+                                src="../video/videoDemo.mp4" 
+                                ></video>
+                                <p class="wiew">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>4356</span>
+                                </p>
+                                <p class="title-video">TRUY BẮT NGHI PHẠM SÁT HẠI TÌNH ĐỊCH TẠI PHÒNG TRỌ</p> 
+                            </a>
+                        </div>
+                        <div class="video">
+                            <a href="../page/detail.html">
+                                <video 
+                                src="../video/videoDemo.mp4" 
+                                ></video>
+                                <p class="wiew">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>4356</span>
+                                </p>
+                                <p class="title-video">TRUY BẮT NGHI PHẠM SÁT HẠI TÌNH ĐỊCH TẠI PHÒNG TRỌ</p> 
+                            </a>
+                        </div>
+                        <div class="video">
+                            <a href="../page/detail.html">
+                                <video 
+                                src="../video/videoDemo.mp4" 
+                                ></video>
+                                <p class="wiew">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>4356</span>
+                                </p>
+                                <p class="title-video">TRUY BẮT NGHI PHẠM SÁT HẠI TÌNH ĐỊCH TẠI PHÒNG TRỌ</p> 
+                            </a>
+                        </div>
+                        <div class="video">
+                            <a href="../page/detail.html">
+                                <video 
+                                src="../video/videoDemo.mp4" 
+                                ></video>
+                                <p class="wiew">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>4356</span>
+                                </p>
+                                <p class="title-video">TRUY BẮT NGHI PHẠM SÁT HẠI TÌNH ĐỊCH TẠI PHÒNG TRỌ</p> 
+                            </a>
+                        </div>
+                        <div class="video">
+                            <a href="../page/detail.html">
+                                <video 
+                                src="../video/videoDemo.mp4" 
+                                ></video>
+                                <p class="wiew">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>4356</span>
+                                </p>
+                                <p class="title-video">TRUY BẮT NGHI PHẠM SÁT HẠI TÌNH ĐỊCH TẠI PHÒNG TRỌ</p> 
+                            </a>
+                        </div>
+                        <div class="video">
+                            <a href="../page/detail.html">
+                                <video 
+                                src="../video/videoDemo.mp4" 
+                                ></video>
+                                <p class="wiew">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>4356</span>
+                                </p>
+                                <p class="title-video">TRUY BẮT NGHI PHẠM SÁT HẠI TÌNH ĐỊCH TẠI PHÒNG TRỌ</p> 
+                            </a>
+                        </div>
+                        <div class="video">
+                            <a href="../page/detail.html">
+                                <video 
+                                src="../video/videoDemo.mp4" 
+                                ></video>
+                                <p class="wiew">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>4356</span>
+                                </p>
+                                <p class="title-video">TRUY BẮT NGHI PHẠM SÁT HẠI TÌNH ĐỊCH TẠI PHÒNG TRỌ</p> 
+                            </a>
+                        </div>
+                        <div class="video">
+                            <a href="../page/detail.html">
+                                <video 
+                                src="../video/videoDemo.mp4" 
+                                ></video>
+                                <p class="wiew">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>4356</span>
+                                </p>
+                                <p class="title-video">TRUY BẮT NGHI PHẠM SÁT HẠI TÌNH ĐỊCH TẠI PHÒNG TRỌ</p> 
+                            </a>
+                        </div>
+                       
+                        
+
+                    </div>
+                    <div class="renderLikes">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../controls/index.js"></script>
+</body>
+
+</html>
