@@ -395,6 +395,7 @@ margin: 0 -10px;
 .renderVideos .video video{
     width: 100%;
     background-color: #000;
+    border-radius: 5px;
 }
 
 .renderVideos .title-video{
