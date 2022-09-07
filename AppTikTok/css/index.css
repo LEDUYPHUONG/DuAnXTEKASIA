@@ -8,9 +8,9 @@
     overflow: hidden;
 } */
 .container{
-    max-width: 1340px;
+
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 ::after,::before{
     padding: 0;
@@ -196,8 +196,8 @@ padding: 10px;
 }
 /* main-left */
 .main-left{
-    width: 17%;
-    height: 600px;
+    width: 240px;
+    height: calc(100vh - 60px);
     padding-top: 20px;
     overflow-y: auto;
     padding-right: 5px;
@@ -208,7 +208,7 @@ padding: 10px;
     border-bottom: 1px solid #e9e9eb;
     padding-bottom: 5px;
 }
-.main-left .link button{
+.main-left .link li{
     width: 100%;
     border: none;
     background-color: #fff;
@@ -220,10 +220,10 @@ padding: 10px;
     margin-bottom: 5px;
     border-radius: 5px;
 }
-.main-left .link button i{
+.main-left .link li i{
     padding-right: 10px;
 }
-.main-left .link button:hover{
+.main-left .link li:hover{
     background-color: #e9e9eb;
 }
 
@@ -355,7 +355,8 @@ padding: 10px;
 .main-right{
     width: 80%;
     padding-left: 3%;
-   
+    height: calc(100vh - 60px);
+    overflow-y: auto;
 }
 .main-right .menu{
     display: flex;
