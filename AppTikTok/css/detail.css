@@ -30,7 +30,11 @@ img{
 button{
     cursor: pointer;
 }
-
+/* iframe  */
+iframe{
+    width: 100%;
+    height: 100%;
+}
 /* scroll */
 .body-right .body-right-main{
     overflow-y: scroll;
@@ -389,3 +393,54 @@ body .container {
     text-align: start;
 }
 
+/* Responsive */
+/*           xs  <576px	đt dọc xs
+    767px >  sm  ≥576px  đt ngang sm
+    991px >  md  ≥768px  tablet md
+    1199px>  lg  ≥992px  desktop
+             xl  ≥1200px 
+    
+/* container */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }    
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1260px) {
+    .container {
+        max-width: 1230px;
+    }   
+}
+/* block */
+
+@media (max-width: 1271px){
+    
+}
+
+@media (max-width: 1071px){
+    
+}
+@media (max-width: 903px){
+    
+}
+
+@media (max-width: 767px){
+    
+}
+
+@media (max-width: 703px){
+    
+}
+@media (max-width: 575px){  
+    
+}
