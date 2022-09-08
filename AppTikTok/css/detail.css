@@ -71,7 +71,7 @@ iframe{
 
 
 body .container {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
  
 }
@@ -393,6 +393,30 @@ body .container {
     text-align: start;
 }
 
+/* back to top */
+#myBtn {
+    width: 40px;
+    height: 40px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+}
+  
+#myBtn:hover {
+    background-color: #555;
+}
+
+
 /* Responsive */
 /*           xs  <576px	đt dọc xs
     767px >  sm  ≥576px  đt ngang sm
@@ -423,8 +447,24 @@ body .container {
 }
 /* block */
 
-@media (max-width: 1271px){
-    
+@media (max-width: 991px){
+    .body-left,
+    .body-right{
+        width: 50%;
+        height: calc(100vh-60px);
+    }
+    .body-right{
+        overflow-y: auto;
+    }
+    .header-top{
+        display: block;
+    }
+    .button-follow{
+        margin-top: 10px;
+    }
+    .header-top{
+        padding-top: 10px;
+    }
 }
 
 @media (max-width: 1071px){
@@ -442,5 +482,21 @@ body .container {
     
 }
 @media (max-width: 575px){  
-    
+    body .container{
+        display: block;
+    }
+    .body-left, .body-right{
+        margin: 0 auto;
+    }
+    .body-right-container{
+        margin: 0;
+    }
+    .like-comment-link{
+        display: block;
+    }
+    .like-comment-link .link{
+        display: block;
+        margin-top: 10px;
+    }
+   
 }
